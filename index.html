@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <p class="disclaimer">Based on <a href="https://youtu.be/jaVNP3nIAv0" target="_blank">freeCodeCamp.org's Youtube Video</a>.</p>
+    </header>
+
+    <div class="scoreboard">
+        <div id="you-label" class="player-label">You</div>
+        <div id="opponent-label" class="player-label">Opponent</div>
+        <span id="you-score">0</span>:<span id="opponent-score">0</span>
+    </div>
+
+    <div class="message">
+        <p>Click an option below to play.</p>
+    </div>
+
+    <div class="choices"> <!--Images downloaded from clipartkey.com-->
+        <div class="choice" id="rock">
+            <img src="Rock.png" alt="" width=150px>
+        </div>
+        <div class="choice" id="paper">
+            <img src="Paper.png" alt="" width=150px>
+        </div>
+        <div class="choice" id="scissors">
+             <img src="Scissors.png" alt="" width=150px>
+        </div>
+    </div>
+
+    <p id="prompt">Take your pick.</p>
+
+    <script src="App.js"></script>
+</body>
+</html>

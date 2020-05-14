@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Pangolin, 'Courier New', Courier, monospace, sans-serif;
+    text-align: center;
+}
+
+body{
+    background-color: teal;
+}
+
+header{
+    background-color: salmon;
+    padding: 20px;
+}
+
+header > h1{
+    color: #013637;
+}
+
+header > p{
+    color: #013637;
+    font-size: 12px;
+    position: absolute;
+    right: 30px;
+}
+
+    header > p > a{
+        color: #013637;
+        text-decoration: none;
+    }
+
+    header > p > a:hover{
+        text-decoration: underline;
+    }
+
+.scoreboard{
+    border: 3px solid salmon;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    width: 200px;
+    margin: 25px auto; /* does 15px top bottom and centers horizontally*/
+    padding: 5px;
+    position: relative /* so that we can position labels relative to the scoreboard*/
+}
+
+.player-label{
+    background-color: rgb(65, 64, 66);
+    padding: 3px;
+    font-size: 12px;
+}
+
+#you-label{
+    position: absolute;
+    top: 19px;
+    left: -16px;
+}
+
+#opponent-label{
+    position: absolute;
+    top: 19px;
+    right: -30px;
+}
+
+.message{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.choice{
+    display: inline-block;
+    border: 1px teal solid;
+    border-radius: 50%;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+    .choice:hover{
+        background-color: #013637;
+    }
+
+    .win-border{
+        border: 3px green solid;
+        box-shadow: 0 0 10px;
+    }
+
+    .lose-border{
+        border: 3px red solid;
+        box-shadow: 0 0 10px;
+    }
+
+    .draw-border{
+        border: 3px gray solid;
+        box-shadow: 0 0 10px;
+    }
+
+.choices{
+
+}
+
+#prompt{
+    margin: 25px auto;
+    font-size: 24px;
+    color: white;
+}
