@@ -9,7 +9,6 @@
 <body>
     <header>
         <h1>Rock Paper Scissors</h1>
-        <p class="disclaimer">Based on <a href="https://youtu.be/jaVNP3nIAv0" target="_blank">freeCodeCamp.org's Youtube Video</a>.</p>
     </header>
 
     <div class="scoreboard">
@@ -35,6 +34,36 @@
     </div>
 
     <p id="prompt">Take your pick.</p>
+
+    <div class="statistics">
+        <div class="stats-header">
+            <h1>Statistics By Choice</h1>
+        </div>
+
+        <div class="stats">
+            <div class="stat-choice" id="rock-stats">
+                <h1>Rock</h1>
+                <p>Wins: <span id="rock-wins">-</span></p>
+                <p>Losses: <span id="rock-losses">-</span></p>
+                <p>Draws: <span id="rock-draws">-</span></p>
+                <p>Success Rate: <span id="rock-success">--</span>%</p>
+            </div>
+            <div class="stat-choice" id="paper-stats">
+                <h1>Paper</h1>
+                <p>Wins: <span id="paper-wins">-</span></p>
+                <p>Losses: <span id="paper-losses">-</span></p>
+                <p>Draws: <span id="paper-draws">-</span></p>
+                <p>Success Rate: <span id="paper-success">--</span>%</p>
+            </div>
+            <div class="stat-choice" id="scissors-stats">
+                <h1>Scissors</h1>
+                <p>Wins: <span id="scissors-wins">-</span></p>
+                <p>Losses: <span id="scissors-losses">-</span></p>
+                <p>Draws: <span id="scissors-draws">-</span></p>
+                <p>Success Rate: <span id="scissors-success">--</span>%</p>
+            </div>
+        </div>
+    </div>
 
     <script src="App.js"></script>
 </body>

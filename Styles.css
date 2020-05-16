@@ -16,33 +16,18 @@ header{
     padding: 20px;
 }
 
-header > h1{
+header h1{
     color: #013637;
+    font-size: 70px;
 }
-
-header > p{
-    color: #013637;
-    font-size: 12px;
-    position: absolute;
-    right: 30px;
-}
-
-    header > p > a{
-        color: #013637;
-        text-decoration: none;
-    }
-
-    header > p > a:hover{
-        text-decoration: underline;
-    }
 
 .scoreboard{
     border: 3px solid salmon;
-    border-radius: 4px;
+    border-radius: 10px;
     color: white;
     font-weight: bold;
-    font-size: 40px;
-    width: 200px;
+    font-size: 80px;
+    width: 500px;
     margin: 25px auto; /* does 15px top bottom and centers horizontally*/
     padding: 5px;
     position: relative /* so that we can position labels relative to the scoreboard*/
@@ -51,19 +36,19 @@ header > p{
 .player-label{
     background-color: rgb(65, 64, 66);
     padding: 3px;
-    font-size: 12px;
+    font-size: 26px;
 }
 
 #you-label{
     position: absolute;
-    top: 19px;
-    left: -16px;
+    top: 32px;
+    left: -28px;
 }
 
 #opponent-label{
     position: absolute;
-    top: 19px;
-    right: -30px;
+    top: 32px;
+    right: -70px;
 }
 
 .message{
@@ -100,12 +85,51 @@ header > p{
         box-shadow: 0 0 10px;
     }
 
-.choices{
-
-}
-
 #prompt{
     margin: 25px auto;
     font-size: 24px;
     color: white;
 }
+
+
+.statistics{
+    margin: 50px;
+    background-color:  rgb(65, 64, 66);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stats-header{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.stats{
+    display: inline-flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.stat-choice{
+    /* display:inline-grid; */
+    /* justify-content: space-evenly; */
+    padding: 10px 25px;
+    border: 4px salmon solid;
+    border-radius: 10px;
+    /* margin: 0px 100px; */
+    width: 30%;
+    min-width: 300px;
+}
+
+    .stat-choice h1{
+        font-weight: bold;
+    }
+
+    .stat-choice p{
+        font-size: 30px;
+    }
