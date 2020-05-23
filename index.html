@@ -11,58 +11,71 @@
         <h1>Rock Paper Scissors</h1>
     </header>
 
-    <div class="scoreboard">
-        <div id="you-label" class="player-label">You</div>
-        <div id="opponent-label" class="player-label">Opponent</div>
-        <span id="you-score">0</span>:<span id="opponent-score">0</span>
-    </div>
-
-    <div class="message">
-        <p>Click an option below to play.</p>
-    </div>
-
-    <div class="choices"> <!--Images downloaded from clipartkey.com-->
-        <div class="choice" id="rock">
-            <img src="Rock.png" alt="" width=150px>
+    <div class="play-section">
+        <div class="scoreboard">
+            <div id="you-label" class="player-label">You</div>
+            <div id="opponent-label" class="player-label">Opponent</div>
+            <span id="you-score">0</span>:<span id="opponent-score">0</span>
         </div>
-        <div class="choice" id="paper">
-            <img src="Paper.png" alt="" width=150px>
-        </div>
-        <div class="choice" id="scissors">
-             <img src="Scissors.png" alt="" width=150px>
-        </div>
-    </div>
 
-    <p id="prompt">Take your pick.</p>
+        <div class="message">
+            <p>Click an option below to play.</p>
+        </div>
+
+        <div class="choices"> <!--Images downloaded from clipartkey.com-->
+            <div class="choice" id="rock">
+                <img src="Rock.png" alt="" width=150px>
+            </div>
+            <div class="choice" id="paper">
+                <img src="Paper.png" alt="" width=150px>
+            </div>
+            <div class="choice" id="scissors">
+                <img src="Scissors.png" alt="" width=150px>
+            </div>
+        </div>
+
+        <p id="prompt">Take your pick.</p>
+    </div>
 
     <div class="statistics">
         <div class="stats-header">
             <h1>Statistics By Choice</h1>
+            <h2>Theoretical Success Rate is 33%.</h2>
         </div>
 
         <div class="stats">
             <div class="stat-choice" id="rock-stats">
-                <h1>Rock</h1>
+                <div class="stat-choice-title";>
+                    <h1>Rock</h1>
+                    <img id="rock-thumb" src="ThumbsUp.png" alt="" width="20px">
+                </div>
                 <p>Wins: <span id="rock-wins">-</span></p>
                 <p>Losses: <span id="rock-losses">-</span></p>
                 <p>Draws: <span id="rock-draws">-</span></p>
                 <p>Success Rate: <span id="rock-success">--</span>%</p>
             </div>
             <div class="stat-choice" id="paper-stats">
-                <h1>Paper</h1>
+                <div class="stat-choice-title";>
+                    <h1>Paper</h1>
+                    <img id="paper-thumb" src="ThumbsUp.png" alt="" width="20px">
+                </div>
                 <p>Wins: <span id="paper-wins">-</span></p>
                 <p>Losses: <span id="paper-losses">-</span></p>
                 <p>Draws: <span id="paper-draws">-</span></p>
                 <p>Success Rate: <span id="paper-success">--</span>%</p>
             </div>
             <div class="stat-choice" id="scissors-stats">
-                <h1>Scissors</h1>
+                <div class="stat-choice-title";>
+                    <h1>Scissors</h1>
+                    <img id="scissors-thumb" src="ThumbsUp.png" alt="" width="20px">
+                </div>
                 <p>Wins: <span id="scissors-wins">-</span></p>
                 <p>Losses: <span id="scissors-losses">-</span></p>
                 <p>Draws: <span id="scissors-draws">-</span></p>
                 <p>Success Rate: <span id="scissors-success">--</span>%</p>
             </div>
         </div>
+        <p>Each choice with a success rate of at least 33% will have a thumbs up.</p>
     </div>
 
     <script src="App.js"></script>

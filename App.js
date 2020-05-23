@@ -47,14 +47,17 @@ function main()
 {
     rock.addEventListener('click', function() {
         play(1);
+        rotate(rock);
     });
 
     paper.addEventListener('click', function() {
         play(2);
+        rotate(paper);
     });
 
     scissors.addEventListener('click', function() {
         play(3);
+        rotate(scissors);
     });
 }
 
@@ -167,18 +170,32 @@ function play(choice)
     if (rockTotal > 0)
     {
         rock_success.innerHTML = Math.round(rockWins * 100 / rockTotal);
+        Math.round(rockWins * 100 / rockTotal) >= 33 ? 
+            document.getElementById("rock-thumb").style.transform = "rotate(0deg)" : 
+            document.getElementById("rock-thumb").style.transform = "rotate(180deg)";
     }
     if (paperTotal > 0)
     {
         paper_success.innerHTML = Math.round(paperWins * 100 / paperTotal);
+        Math.round(paperWins * 100 / paperTotal) >= 33 ? 
+            document.getElementById("paper-thumb").style.transform = "rotate(0deg)" : 
+            document.getElementById("paper-thumb").style.transform = "rotate(180deg)";
     }
     if (scissorsTotal > 0)
     {
         scissor_success.innerHTML = Math.round(scissorsWins * 100 / scissorsTotal);
+        Math.round(scissorsWins * 100 / scissorsTotal) >= 33 ? 
+            document.getElementById("scissors-thumb").style.transform = "rotate(0deg)" : 
+            document.getElementById("scissors-thumb").style.transform = "rotate(180deg)";
     }
 
     function undoGlow(choice, classRemove)
     {
-        setTimeout(function () {document.getElementById(choice).classList.remove(classRemove);}, 500);
+        setTimeout(function () {document.getElementById(choice).classList.remove(classRemove);}, 300);
     }
+}
+
+function rotate(choice)
+{
+    choice.style.transform += "rotate(360deg)";
 }

@@ -17,8 +17,18 @@ header{
 }
 
 header h1{
-    color: #013637;
+    color: rgb(65, 64, 66);
     font-size: 70px;
+}
+
+.play-section{
+    margin: 50px;
+    background-color:  rgb(65, 64, 66);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 700px;
+    border: ridge 6px white;
 }
 
 .scoreboard{
@@ -60,29 +70,29 @@ header h1{
 
 .choice{
     display: inline-block;
-    border: 1px teal solid;
+    /* border: 1px teal solid; */
     border-radius: 50%;
     padding: 3px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
-    .choice:hover{
+    /* .choice:hover{
         background-color: #013637;
-    }
+    } */
 
     .win-border{
-        border: 3px green solid;
-        box-shadow: 0 0 10px;
+        border: 1px green solid;
+        box-shadow: 0 0 0px;
     }
 
     .lose-border{
-        border: 3px red solid;
-        box-shadow: 0 0 10px;
+        border: 1px red solid;
+        box-shadow: 0 0 0px;
     }
 
     .draw-border{
-        border: 3px gray solid;
-        box-shadow: 0 0 10px;
+        border: 1px gray solid;
+        box-shadow: 0 0 0px;
     }
 
 #prompt{
@@ -98,6 +108,8 @@ header h1{
     color: white;
     padding: 20px;
     border-radius: 10px;
+    min-width: 700px;
+    border: ridge 6px white;
 }
 
 .stats-header{
@@ -105,25 +117,38 @@ header h1{
     padding-bottom: 20px;
 }
 
+.stat-choice-title{
+    display: inline-flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5px;
+    line-height: 1.5;
+    width: 100%;
+    position: relative;
+}
+    .stat-choice-title img{
+        position: absolute;
+        right: 10px;
+        transition: 0.3s;
+    }
+
 .stats{
     display: inline-flex;
     display: inline-flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 20px;
 }
 
 .stat-choice{
-    /* display:inline-grid; */
-    /* justify-content: space-evenly; */
     padding: 10px 25px;
     border: 4px salmon solid;
     border-radius: 10px;
-    /* margin: 0px 100px; */
     width: 30%;
     min-width: 300px;
+    margin: 10px auto;
 }
 
     .stat-choice h1{
