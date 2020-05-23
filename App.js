@@ -5,19 +5,16 @@ let rockTotal = 0;
 let rockWins = 0;
 let rockLosses = 0;
 let rockDraws = 0;
-let rockAngle = 0;
 
 let paperTotal = 0;
 let paperWins = 0;
 let paperLosses = 0;
 let paperDraws = 0;
-let paperAngle = 0;
 
 let scissorsTotal = 0;
 let scissorsWins = 0;
 let scissorsLosses = 0;
 let scissorsDraws = 0;
-let scissorsAngle = 0;
 
 const userScoreDisplay = document.getElementById("you-score");
 const opponentScoreDisplay = document.getElementById("opponent-score");
@@ -50,20 +47,17 @@ function main()
 {
     rock.addEventListener('click', function() {
         play(1);
-        rockAngle += 360;
-        rotate(rock,rockAngle);
+        rotate(rock);
     });
 
     paper.addEventListener('click', function() {
         play(2);
-        paperAngle += 360;
-        rotate(paper, paperAngle);
+        rotate(paper);
     });
 
     scissors.addEventListener('click', function() {
         play(3);
-        scissorsAngle += 360;
-        rotate(scissors, scissorsAngle);
+        rotate(scissors);
     });
 }
 
@@ -203,6 +197,5 @@ function play(choice)
 
 function rotate(choice, angle)
 {
-    var str = "rotate(" + angle + "deg)";
-    choice.style.transform += str;
+    choice.style.transform += "rotate(360deg)";
 }
